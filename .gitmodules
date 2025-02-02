@@ -1,0 +1,3 @@
+[submodule "CenterNet"]
+	path = CenterNet
+	url = https://www.kaggle.com/models/tensorflow/centernet-resnet
