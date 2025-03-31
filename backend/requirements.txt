@@ -3,3 +3,4 @@ tensorflow
 opencv-python
 numpy
 kagglehub
+flask_cors
