@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.be0191d0.css",
-    "main.js": "/static/js/main.8a72ad0d.js",
-    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
-    "static/media/knee-joint-isolated-on-blue-bone-health-vector-54351935.jpg": "/static/media/knee-joint-isolated-on-blue-bone-health-vector-54351935.b97a34e7370a29982ebf.jpg",
-    "index.html": "/index.html",
-    "main.be0191d0.css.map": "/static/css/main.be0191d0.css.map",
-    "main.8a72ad0d.js.map": "/static/js/main.8a72ad0d.js.map",
-    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/KOA_Severity_Analysis/static/css/main.b6df332d.css",
+    "main.js": "/KOA_Severity_Analysis/static/js/main.a268964a.js",
+    "static/js/453.ed3810f9.chunk.js": "/KOA_Severity_Analysis/static/js/453.ed3810f9.chunk.js",
+    "static/media/knee-joint-isolated-on-blue-bone-health-vector-54351935.jpg": "/KOA_Severity_Analysis/static/media/knee-joint-isolated-on-blue-bone-health-vector-54351935.b97a34e7370a29982ebf.jpg",
+    "index.html": "/KOA_Severity_Analysis/index.html",
+    "main.b6df332d.css.map": "/KOA_Severity_Analysis/static/css/main.b6df332d.css.map",
+    "main.a268964a.js.map": "/KOA_Severity_Analysis/static/js/main.a268964a.js.map",
+    "453.ed3810f9.chunk.js.map": "/KOA_Severity_Analysis/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be0191d0.css",
-    "static/js/main.8a72ad0d.js"
+    "static/css/main.b6df332d.css",
+    "static/js/main.a268964a.js"
   ]
 }
