@@ -19,9 +19,10 @@ def determine_joint_space(image_path, model):
     print("Processed detections: ",processed_detections)
 
     # Step 3: Predict severity based on processed detections
-    mean_joint_space = calculate_joint_space(processed_detections)
-    print("Mean Joint Space in severity_predictor.py: ",mean_joint_space)
-    return mean_joint_space
+    mean_joint_space,severity_category = calculate_joint_space(processed_detections)
+    print("********** Mean Joint Space in severity_predictor.py: ",mean_joint_space)
+    print("********** Category in severity_predictor.py is : ",severity_category)
+    return mean_joint_space,severity_category
 
 # Example usage:
 if __name__ == "__main__":

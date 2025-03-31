@@ -25,13 +25,17 @@ def upload_image():
     file.save(temp_image_path)
 
     # Run your severity prediction logic
-    mean_joint_space = determine_joint_space(temp_image_path, model)
+    mean_joint_space,severity_category = determine_joint_space(temp_image_path, model)
 
-    print('mean_joint_space in app.py (backend): ',mean_joint_space)
+    print('********* mean_joint_space in app.py (backend): ',mean_joint_space)
+    print("******* category in app.py : ",severity_category)
     print('JSON return:', jsonify({'mean_joint_space': mean_joint_space}))
 
+    if(mean_joint_space>=0.36):
+        return jsonify({'error':'Uploaded image is not a valid x-ray image. Please upload a valid x-ray image'}),200
+
     # Return the results as a JSON response
-    return jsonify({'mean_joint_space':mean_joint_space}), 200
+    return jsonify({'mean_joint_space':mean_joint_space,"severity":severity_category}), 200
 
 if __name__ == "__main__":
     app.run(debug=True)

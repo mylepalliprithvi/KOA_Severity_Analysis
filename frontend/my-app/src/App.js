@@ -6,8 +6,11 @@ import UploadImage from './components/UploadImage';
 const App = () => {
     return (
         <div>
+            <center>
             <h1>Knee Osteoarthritis Severity Prediction</h1>
-            <UploadImage/>
+            <ImageUpload/>
+            </center>
+            
            {/* <ImageUpload />*/}
         </div>
     );

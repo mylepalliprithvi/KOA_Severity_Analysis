@@ -1,6 +1,18 @@
 
 import numpy as np
 
+def get_severity_category(mean_joint_space):
+    if mean_joint_space >=0.36:
+        return "Invalid X-ray"
+    elif mean_joint_space >=0.25:
+        return "Severe OA"
+    elif mean_joint_space>=0.18:
+        return "Moderate OA"
+    elif mean_joint_space>=0.12:
+        return "Mild OA"
+    else:
+        return "Healthy"
+
 def calculate_joint_space(processed_detections):
     """
     Calculate the mean joint space width based on processed detections.
@@ -24,10 +36,11 @@ def calculate_joint_space(processed_detections):
 
     if not joint_spaces:
         print("No joint detected")
-        return None
+        return None,"No Detection"
 
     # Calculate mean joint space
     mean_joint_space = np.mean(joint_spaces)
-    print("Mean Joint Space in evaluation.py is:", mean_joint_space)
-    
-    return mean_joint_space
+    severity_category=get_severity_category(mean_joint_space)
+    print("*********** Mean Joint Space in evaluation.py is:", mean_joint_space)
+    print("*********** Category : ",severity_category)
+    return mean_joint_space,severity_category

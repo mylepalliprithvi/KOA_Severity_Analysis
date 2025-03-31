@@ -19,6 +19,7 @@ const UploadImage = () => {
             const response = await axios.post('http://localhost:5000/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
+                    'Acess-Control-Allow-Origin':'http://localhost:3000'
                 },
             });
             //setSeverity(response.data.severity); 
